@@ -18,14 +18,14 @@
 #define WEEKLY_VIEW_COUNT 7
 #define DAY_TITLE_VIEW_HEIGHT 20.f
 #define DAY_TITLE_FONT_SIZE 11.f
-#define DATE_TITLE_MARGIN_TOP 22.f
+#define DATE_TITLE_MARGIN_TOP 25.f
 
 #define DATE_VIEW_MARGIN 3.f
 #define DATE_VIEW_HEIGHT 28.f
 
 
 #define DATE_LABEL_MARGIN_LEFT 9.f
-#define DATE_LABEL_INFO_WIDTH 160.f
+#define DATE_LABEL_INFO_WIDTH 200.f
 #define DATE_LABEL_INFO_HEIGHT 40.f
 
 #define WEATHER_ICON_WIDTH 20
@@ -109,6 +109,7 @@ static float const CLCalendarSelectedDatePrintFontSizeDefault = 13.f;
     
     NSLog(@"%@  %f", attributes[CLCalendarBackgroundImageColor],  self.selectedDatePrintFontSize);
     self.backgroundImageColor = attributes[CLCalendarBackgroundImageColor];
+    _backgroundImageView.backgroundColor = self.backgroundImageColor? self.backgroundImageColor : [UIColor colorWithPatternImage:[UIImage calendarBackgroundImage:self.bounds.size.height]];
     
     [self setNeedsDisplay];
 }
