@@ -16,7 +16,7 @@
 
 
 #define DATE_LABEL_SIZE 28
-#define DATE_LABEL_FONT_SIZE 15
+#define DATE_LABEL_FONT_SIZE 14
 
 @implementation DailyCalendarView
 
