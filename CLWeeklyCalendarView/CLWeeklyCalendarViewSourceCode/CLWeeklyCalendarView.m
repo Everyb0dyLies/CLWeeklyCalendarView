@@ -47,7 +47,7 @@ static NSString* const CLCalendarSelectedDatePrintFormatDefault = @"EEE, d MMM y
 static float const CLCalendarSelectedDatePrintFontSizeDefault = 13.f;
 
 
-@interface CLWeeklyCalendarView()<DailyCalendarViewDelegate, UIGestureRecognizerDelegate>
+@interface CLWeeklyCalendarView()<DailyCalendarViewDelegate, UIGestureRecognizerDelegate, CAAnimationDelegate>
 @property (nonatomic, strong) UIView *dailySubViewContainer;
 @property (nonatomic, strong) UIView *dayTitleSubViewContainer;
 @property (nonatomic, strong) UIImageView *backgroundImageView;
