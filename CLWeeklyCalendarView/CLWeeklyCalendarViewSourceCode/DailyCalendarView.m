@@ -84,7 +84,7 @@
         
         self.dateLabel.textColor = (blnSelected)?[UIColor whiteColor]:[UIColor colorWithRed:255.0/255.0 green:147.0/255.0 blue:0.0/255.0 alpha:1.0];
     }else{
-        self.dateLabelContainer.backgroundColor = (blnSelected)?[UIColor colorWithRed:21.0/255.0 green:126.0/255.0 blue:251.0/255.0 alpha:1.0]: [UIColor whiteColor];
+        self.dateLabelContainer.backgroundColor = (blnSelected)?[UIColor colorWithRed:27.0/255.0 green:173.0/255.0 blue:248.0/255.0 alpha:1.0]: [UIColor whiteColor];
         
         self.dateLabel.textColor = (blnSelected)?[UIColor whiteColor]: [UIColor blackColor];
     }
